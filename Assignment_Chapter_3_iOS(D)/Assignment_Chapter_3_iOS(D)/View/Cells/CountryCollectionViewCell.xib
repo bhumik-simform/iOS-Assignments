@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CountryCardCollectionViewCell" id="gTV-IL-0wX" customClass="CountryCollectionViewCell" customModule="Assignment_Chapter_3_iOS_D_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="213"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdP-TL-tia">
+                        <rect key="frame" x="113" y="16" width="45" height="137.33333333333334"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEZ-CA-txO">
+                        <rect key="frame" x="117.99999999999999" y="169.33333333333334" width="35.333333333333329" height="15.666666666666657"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pt-h2-sOh">
+                        <rect key="frame" x="122" y="193" width="27" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nEZ-CA-txO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="GkG-CC-Li0"/>
+                <constraint firstItem="nEZ-CA-txO" firstAttribute="top" relation="lessThanOrEqual" secondItem="wdP-TL-tia" secondAttribute="bottom" constant="16" id="Lba-kH-p8W"/>
+                <constraint firstItem="wdP-TL-tia" firstAttribute="top" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="YRq-5a-tyw"/>
+                <constraint firstItem="5pt-h2-sOh" firstAttribute="top" secondItem="nEZ-CA-txO" secondAttribute="bottom" constant="8" id="ilY-x4-NM4"/>
+                <constraint firstItem="wdP-TL-tia" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="j1x-Z5-vuW"/>
+                <constraint firstAttribute="bottom" secondItem="5pt-h2-sOh" secondAttribute="bottom" constant="8" id="lnA-cy-cTL"/>
+                <constraint firstItem="5pt-h2-sOh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sKF-8E-bnU"/>
+            </constraints>
+            <size key="customSize" width="271" height="213"/>
+            <connections>
+                <outlet property="countryNameLbl" destination="nEZ-CA-txO" id="0h1-5C-wdc"/>
+                <outlet property="dishCountLbl" destination="5pt-h2-sOh" id="4k5-h7-ZP8"/>
+                <outlet property="emojiILbl" destination="wdP-TL-tia" id="s23-qW-M9j"/>
+            </connections>
+            <point key="canvasLocation" x="52.671755725190835" y="23.591549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
